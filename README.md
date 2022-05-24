@@ -2,7 +2,6 @@
 <h3 align="center">Seasonal Calendar for PowerApps</h3>
 
   <p align="center">
-    project_description
     <a href="https://github.com/github_username/repo_name">View Demo</a>
     ·
     <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
