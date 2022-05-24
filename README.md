@@ -1,1 +1,1 @@
-# seasonal-calendar
+# Seasonal Calendar for PowerApps
