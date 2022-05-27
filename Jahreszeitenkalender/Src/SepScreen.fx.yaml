@@ -1,0 +1,243 @@
+SepScreen As screen:
+    OnVisible: |-
+        =UpdateContext({vFilter:Blank()});
+        Set(
+            screenTheme,
+            {
+                monthColor: RGBA(149, 149, 149, 1)
+            }
+        )
+
+    txtSearchSep As text:
+        Align: =Align.Center
+        BorderColor: =screenTheme.monthColor
+        Default: =
+        Height: =66
+        HintText: ="Search for content"
+        OnChange: =
+        OnSelect: |-
+            =UpdateContext({vFilter:Blank()});
+        RadiusBottomLeft: =50
+        RadiusBottomRight: =50
+        RadiusTopLeft: =50
+        RadiusTopRight: =50
+        Width: =355
+        X: =12
+        Y: =110
+        ZIndex: =1
+
+    Rectangle1_12 As rectangle:
+        Fill: =screenTheme.monthColor
+        Height: =768
+        OnSelect: |
+            =
+        Width: =986
+        X: =380
+        ZIndex: =2
+
+    CompanyLogoSep As image:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        Height: =85
+        Image: |-
+            ="https://www.logolynx.com/images/logolynx/s_bb/bb2bdaecf8c362aa715ca8c845f3f869.jpeg"
+        OnSelect: =
+        RadiusBottomLeft: =100
+        RadiusBottomRight: =100
+        RadiusTopLeft: =100
+        RadiusTopRight: =100
+        Width: =85
+        X: =147
+        Y: =12
+        ZIndex: =3
+
+    TeamFilterSep As button:
+        Color: =RGBA(0, 0, 0, 1)
+        Fill: |-
+            =If(vFilter = "Teams:",RGBA(200, 200, 200, 1),screenTheme.monthColor)
+        Height: =118
+        HoverColor: =Black
+        HoverFill: =ColorFade(RGBA(178, 153, 196, 1), -20%)
+        OnSelect: |-
+            =UpdateContext({vFilter:"Teams:"})
+        PressedColor: =Self.Color
+        PressedFill: =
+        Text: ="Teams"
+        Width: =355
+        X: =12
+        Y: =202
+        ZIndex: =4
+
+    TitleSep As label:
+        FontWeight: =FontWeight.Bold
+        Height: =83
+        PaddingLeft: =15
+        Size: =25
+        Text: ="Updates September"
+        Width: =586
+        X: =382
+        Y: =27
+        ZIndex: =8
+
+    SharePointFilterSep As button:
+        Color: =RGBA(0, 0, 0, 1)
+        Fill: |-
+            =If(vFilter = "SharePoint:",RGBA(200, 200, 200, 1),screenTheme.monthColor)
+        Height: =118
+        HoverColor: =Black
+        HoverFill: =ColorFade(RGBA(178, 153, 196, 1), -20%)
+        OnSelect: |-
+            =UpdateContext({vFilter:"SharePoint:"})
+        PressedFill: =
+        Text: ="SharePoint"
+        Width: =355
+        X: =12
+        Y: =332
+        ZIndex: =9
+
+    BookingsFilterSep As button:
+        Color: =RGBA(0, 0, 0, 1)
+        Fill: |-
+            =If(vFilter = "Bookings:",RGBA(200, 200, 200, 1),screenTheme.monthColor)
+        Height: =118
+        HoverColor: =Black
+        HoverFill: =ColorFade(RGBA(178, 153, 196, 1), -20%)
+        OnSelect: |-
+            =UpdateContext({vFilter:"Bookings:"})
+        PressedFill: =
+        Text: ="Bookings"
+        Width: =355
+        X: =12
+        Y: =475
+        ZIndex: =10
+
+    RemoveFilterSep As button:
+        Color: =RGBA(0, 0, 0, 1)
+        Fill: =screenTheme.monthColor
+        Height: =72
+        OnSelect: |-
+            =UpdateContext({vFilter:Blank()})
+        Text: ="Remove filter"
+        Width: =251
+        X: =64
+        Y: =647
+        ZIndex: =11
+
+    BackArrow_12 As icon.ChevronLeft:
+        Color: =screenTheme.monthColor
+        Icon: =Icon.ChevronLeft
+        OnSelect: =Back()
+        X: =12
+        Y: =19
+        ZIndex: =13
+
+    Icon2_12 As icon.Reload:
+        Color: =RGBA(0, 0, 0, 1)
+        Height: =44
+        Icon: =Icon.Reload
+        OnSelect: =Refresh('Roadmap Microsoft')
+        Width: =44
+        X: =1288
+        Y: =46
+        ZIndex: =15
+
+    "GallerySep As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        Height: =632
+        Items: |
+            =Search(
+                If(IsBlank(vFilter),
+                    Sort(
+                        Filter(
+                            'Roadmap Microsoft',
+                            PublishDate < Date(2022,09,31) &&
+                            PublishDate > Date(2022,09,01) &&
+                            (Product = "Microsoft Teams" || Product = "Bookings" || Product = "SharePoint" || Product = "PowerPoint")
+                        ),
+                        PublishDate,
+                        Descending
+                    )
+                    ,//else
+                    Sort( 
+                        Filter(
+                            'Roadmap Microsoft',
+                            vFilter in Title &&
+                            PublishDate < Date(2022,09,31) &&
+                            PublishDate > Date(2022,09,01) &&
+                            (Product = "Microsoft Teams" || Product = "Bookings" || Product = "SharePoint" || Product = "PowerPoint")
+                        ),
+                    PublishDate,
+                    Descending
+                    )
+                )
+                ,
+                txtSearchSep.Text
+                ,
+                "Title",
+                "Summary"
+            )
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =Min(160, Self.Height - 60)
+        Width: =984
+        X: =382
+        Y: =136
+        ZIndex: =16
+
+        Title1_12 As label:
+            Height: =36
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Title
+            VerticalAlign: =VerticalAlign.Top
+            Width: =782
+            X: =24
+            Y: =26
+            ZIndex: =2
+
+        Subtitle1_12 As label:
+            Height: =58
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =PlainText(ThisItem.Summary)
+            VerticalAlign: =VerticalAlign.Top
+            Width: =897
+            X: =Title1_12.X
+            Y: =Title1_12.Y + Title1_12.Height + 4
+            ZIndex: =3
+
+        NextArrow1_12 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Height: =60
+            Icon: =Icon.ChevronRight
+            OnSelect: =Launch(ThisItem.Url)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="Elementdetails anzeigen"
+            Width: =60
+            X: =Parent.TemplateWidth - Self.Width - 5
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =4
+
+        Separator1_12 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =5
+
+        Label2_12 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.PublishDate
+            Width: =103
+            X: =818
+            Y: =22
+            ZIndex: =6
+

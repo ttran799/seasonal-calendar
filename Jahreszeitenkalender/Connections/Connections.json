@@ -1,0 +1,30 @@
+{
+  "1ff2817f-9f5f-4136-9217-7db0b4307b49": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1568/1.0.1568.2757/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://m365x40353779.sharepoint.com/sites/SeasonalCalendar": {
+        "dataSources": {
+          "Roadmap Microsoft": {
+            "tableName": "582ff738-cbdb-4e44-b9f7-68984f57102e"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Roadmap Microsoft"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "1ff2817f-9f5f-4136-9217-7db0b4307b49"
+  }
+}
