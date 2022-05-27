@@ -41,6 +41,12 @@ The Seasonal Calendar Power App is designed to deliver the latest updates of Mic
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+### The system includes
+* Power App Canvas App
+* SharePoint List
+* Power Automate Flows (To create & update SharePoint List)
+* Microsoft Roadmap RSS-Feed 
+![JahreszeitenApp](https://user-images.githubusercontent.com/106154410/170679342-07a4e650-97a3-4bb7-86fb-3761fe420b83.png)
 
 
 <!-- GETTING STARTED -->
