@@ -82,9 +82,14 @@ Important:
 Column | Description | 
 --- | --- | 
 Title | Contains the title of the post |
-Title | Contains the title of the post |
-Title | Contains the title of the post |
-
+Product | Affected product |
+Summary | Brief description of the change |
+PublishDate | Date of publication of the feature or the change |
+UpdatedDate | Date of the update for the change or the feature |
+URL | Link to the official page for the change |
+GA Date | Date for General Availability |
+Category | All categories this post has |
+GUID | ID to identify the change |
 
 ### PowerApp setup
 1.	Import the Jahreszeitenkalender.zip file into your environment and change the SharePoint Site to your own. Detailed instructions: Guide_ImportApp.pdf
