@@ -79,5 +79,10 @@ Important:
 - After the import, make sure to select the correct SharePoint page in the flow. A total of 2 changes must be made. One for the action "Retrieve items" and one for the action "Create item. This item is included in the action "Loop through RSS feed" > "Check if...". For both changes it is important to select the correct list!
 - During import it can happen that GA Date and PublishDate are not in the correct column. Therefore set PublishDate with the RSS "Feed published on" and GA Date with the variable vGADate.
 
+Attempt | #1 | #2 | #3 | #4 | #5 | #6 | #7 | #8 | #9 | #10 | #11
+--- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
+Seconds | 301 | 283 | 290 | 286 | 289 | 285 | 287 | 287 | 272 | 276 | 269
+
+
 ### PowerApp setup
 1.	Import the Jahreszeitenkalender.zip file into your environment and change the SharePoint Site to your own. Detailed instructions: Guide_ImportApp.pdf
