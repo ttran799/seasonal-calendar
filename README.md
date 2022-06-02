@@ -79,9 +79,11 @@ Important:
 - After the import, make sure to select the correct SharePoint page in the flow. A total of 2 changes must be made. One for the action "Retrieve items" and one for the action "Create item. This item is included in the action "Loop through RSS feed" > "Check if...". For both changes it is important to select the correct list!
 - During import it can happen that GA Date and PublishDate are not in the correct column. Therefore set PublishDate with the RSS "Feed published on" and GA Date with the variable vGADate.
 - 
-Title | Contains the title of the post | 
+Column | Description | 
 --- | --- | 
-Seconds | 301 |
+Title | Contains the title of the post |
+Title | Contains the title of the post |
+Title | Contains the title of the post |
 
 
 ### PowerApp setup
