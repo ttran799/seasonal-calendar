@@ -35,7 +35,7 @@ A SharePoint page is needed, in which we then create a list. This list contains 
 
 A "Team site" has been created for the app with the name "Seasonal Calendar". If you already have a SharePoint site, you can use it as well.
 
-2. Import the "RoadmapListCreator" flow. Detailed instructions: Guide_ImportFlow.pdf
+2. Import the "RoadmapListCreator" flow into your environment. Detailed instructions: Guide_ImportFlow.pdf
 
 After executing the flow, a new list with 9 columns should have been created on the SharePoint page.
 
