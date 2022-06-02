@@ -80,4 +80,4 @@ Important:
 - During import it can happen that GA Date and PublishDate are not in the correct column. Therefore set PublishDate with the RSS "Feed published on" and GA Date with the variable vGADate.
 
 ### PowerApp setup
-1.	Import Zip-File of the App in your environment and change the SharePoint Site to your own. Detailed instructions: Guide_ImportApp.pdf
+1.	Import the Jahreszeitenkalender.zip file into your environment and change the SharePoint Site to your own. Detailed instructions: Guide_ImportApp.pdf
