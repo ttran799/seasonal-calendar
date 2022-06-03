@@ -67,3 +67,7 @@ GUID | ID to identify the change |
 
 ### Customization
 After setting up, the app can be customized very easily. Currently, the app is designed so that only the products "Microsoft Teams", "Bookings" and "SharePoint" can be displayed and filtered and also only the articles that are "launched". If other topics are more relevant to you, this can be changed in the individual galleries. In the SharePoint list you can alse decide which posts are displayed. For irrelevant posts simply remove them from the SharePoint list. And if you want more articles than "launched" ones in the SharePoint list you need to configurate that in the Flow.
+
+## Share the App into Microsoft Teams
+1. Share the App: Go to [PowerApps](make.powerapps.com) > Apps > Choose the App > Share > "Everybody" in the organization > Share
+2. Share the SharePoint List: Go to your SharePoint List > Click on the gear icon > List Settings > Permissions for this list > Grant Permissions > Add E-Mail of the Team (you can find it in AAD) > Show options > Set permission level to Read > Share  
