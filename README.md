@@ -41,7 +41,6 @@ After executing the flow, a new list with 9 columns should have been created on 
 
 Important: 
 - When you create a new SharePoint Site, that can take up some time. So you should wait a little bit before you run the Flow. 
-- If you getting conflicts with 
 - For the column "Summary" the option "Enhanced Rich Text" has to be activated manually. Go to the SharePoint list > Summary > Column Settings > Edit > More Options > "Use enhanced rich...": Yes > Save
 - For the column "PublishDate" and "UpdatedDate" the times, as well as the friendly format must NOT be included. PublishDate & UpdatedDate > Include Time = No > Friendly format = No > Save
 
