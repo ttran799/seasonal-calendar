@@ -67,7 +67,11 @@ GUID | ID to identify the change |
 1.	Import the Jahreszeitenkalender.zip file into your environment and change the data source to your own SharePoint Site. Detailed instructions: Guide_ImportApp.pdf
 
 ### Customization
-After setting up, the app can be customized very easily. Currently, the app is designed so that only the products "Microsoft Teams", "Bookings" and "SharePoint" can be displayed and filtered and also only the articles that are "launched". If other topics are more relevant to you, this can be changed in the individual galleries. In the SharePoint list you can also decide which posts are displayed. For irrelevant posts simply remove them from the SharePoint list. And if you want more articles than "launched" ones in the SharePoint list you need to configurate that in the Flow.
+## App
+After setting up, the app can be customized very easily. Currently, the app is designed so that only the products "Microsoft Teams", "Bookings" and "SharePoint" can be displayed and filtered and also only the articles that are "launched". If other topics are more relevant to you: Go to the component "App" in the tree view > Choose OnStart as the property > And add the technology that you want to display in the Collection "Technologies" (Important: You need to put in the full name of the Technology e.g. "Microsoft Teams" instead of Teams.
+
+## Articles
+In the SharePoint list you can also decide which posts need to be displayed. For irrelevant posts simply remove them from the SharePoint list. And if you want more articles than "launched" ones in the SharePoint list you need to configurate that in the Flow.
 
 ## Share the App into Microsoft Teams
 1. Share the App: Go to [PowerApps](make.powerapps.com) > Apps > Choose the App > Share > "Everybody" in the organization > Share
