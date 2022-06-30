@@ -68,7 +68,7 @@ GUID | ID to identify the change |
 
 ## Customization
 ### App
-After setting up, the app can be customized very easily. Currently, the app is designed so that only the products "Microsoft Teams", "Bookings" and "SharePoint" can be displayed and filtered and also only the articles that are "launched". If other topics are more relevant to you: Go to the component "App" in the tree view > Choose OnStart as the property > And add the technology that you want to display in the Collection "Technologies" (Important: You need to put in the full name of the Technology e.g. "Microsoft Teams" instead of Teams.
+After setting up, the app can be customized very easily. Currently, the app is designed so that only the products "Microsoft Teams", "Bookings" and "SharePoint" can be displayed and filtered and also only the articles that are "launched". If other topics are more relevant to you: Go to the component "App" in the tree view > Choose OnStart as the property > And add the technology that you want to display in the Collection "Technologies" (Important: You need to put in the full name of the Technology e.g. "Microsoft Teams" instead of Teams). To make Color changes for each month you can also do that in the property "OnStart".
 
 ### Articles
 In the SharePoint list you can also decide which posts need to be displayed. For irrelevant posts simply remove them from the SharePoint list. And if you want more articles than "launched" ones in the SharePoint list you need to configurate that in the Flow.
