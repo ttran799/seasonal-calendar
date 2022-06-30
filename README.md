@@ -23,7 +23,7 @@ The Seasonal Calendar Power App is designed to deliver the latest updates of Mic
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To set up the app in your own environment, it needs the files from the Downloads folder. These must be downloaded first. The folder contains the app and two Power Automate flows. One flow is used to keep the content in SharePoint up to date and the other flow is used to simplify the SharePoint list setup and automatically create the required columns for the list. 
+To set up the app in your own environment, the files in the Download folder are needed [Download Link: ](https://github.com/ttran799/seasonal-calendar/archive/refs/heads/main.zip). These must be downloaded first. The folder contains the app and two Power Automate flows. One flow is used to keep the content in SharePoint up to date and the other flow is used to simplify the SharePoint list setup and automatically create the required columns for the list. 
 
 Important: Please note in which environment you want to integrate the system!
 
