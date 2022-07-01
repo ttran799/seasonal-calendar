@@ -44,7 +44,7 @@ Important:
 - For the column "Summary" the option "Enhanced Rich Text" has to be activated manually. Go to the SharePoint list > Summary > Column Settings > Edit > More Options > "Use enhanced rich...": Yes > Save
 - For the column "PublishDate" and "UpdatedDate" the times, as well as the friendly format must NOT be included. PublishDate & UpdatedDate > Include Time = No > Friendly format = No > Save
 
-3. Import of the "RoadmapRSSFlow" flow. The "Guide_ImportFlow" guide can be used again for this. After activating the flow, the list should be filled with entries. This flow repeats itself every month to add all entries of the previous month to the list. If the flow is executed for the first time, all entries of this year are entered. 
+3. Import of the "RoadmapRSSFlow" flow. The "Guide_ImportFlow" guide can be used again for this. You can activate the flow after importing it, the list should be filled with all entries of this year, because you running the Flow for the first time. After that and for the best performance you should edit the flow to always run on the 1st of a month, to set this up: Edit the Flow > Click on the Action "Recurrence" > Show advanced options > Start time: 2022-XX-01T00:00:00 > Save (XX should be the next upcoming month e.g. If today is 18th June 2022, Start time should be 2022-07-01T00:00:00. This flow repeats itself every month to add all entries of the previous month to the list.
 
 Important: 
 - When importing, the connector for RSS must be created, use the same steps as for the SharePoint connector.
@@ -75,4 +75,5 @@ In the SharePoint list you can also decide which posts need to be displayed. For
 
 ## Share the App into Microsoft Teams
 1. Share the App: Go to [PowerApps](make.powerapps.com) > Apps > Choose the App > Share > "Everybody" in the organization > Share
-2. Share the SharePoint List: Go to your SharePoint List > Click on the gear icon > List Settings > Permissions for this list > Grant Permissions > Add E-Mail of the Team (you can find it in AAD) > Show options > Set permission level to Read > Share  
+2. Share the SharePoint List: Go to your SharePoint List > Click on the gear icon > List Settings > Permissions for this list > Grant Permissions > Add E-Mail of the Team (you can find it in AAD) > Show options > Set permission level to Read > Share
+3. Add the App to your Team: Go to Microsoft Teams > Click on your Team > Choose the Channel > Click on the "+" > Choose "Jahreszeitenkalender" 
