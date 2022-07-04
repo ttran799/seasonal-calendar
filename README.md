@@ -75,4 +75,4 @@ In the SharePoint list you can also decide which posts need to be displayed. For
 ## Share the App into Microsoft Teams
 1. Share the App: Go to [PowerApps](make.powerapps.com) > Apps > Choose the App > Share > "Everybody" in the organization > Share
 2. Share the SharePoint List: Go to your SharePoint List > Click on the gear icon > List Settings > Permissions for this list > Grant Permissions > Add E-Mail of the Team (you can find it in AAD) > Show options > Set permission level to Read > Share
-3. Add the App to your Team: Go to Microsoft Teams > Click on your Team > Choose the Channel > Click on the "+" > Choose "Jahreszeitenkalender" 
+3. If you want to add the App to Microsoft Teams, please follow this [guide](https://docs.microsoft.com/en-us/power-apps/teams/embed-teams-tab).
