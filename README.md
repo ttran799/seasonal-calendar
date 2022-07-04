@@ -48,7 +48,7 @@ Important:
 
 4. Now you can execute the Flow manually, the SharePoint List should be filled with all entries of this year, because you running the Flow for the first time. After that and for the best performance you should edit the flow to always run on the 1st of a month, to set this up: Edit the Flow > Click on the Action "Recurrence" > Show advanced options > Start time: 2022-XX-01T00:00:00 > Save (XX should be the next upcoming month e.g. If today is 18th June 2022, Start time should be 2022-07-01T00:00:00. This flow repeats itself every month to add all entries of the previous month to the list.
 
-Note: The process of inserting all items from the official Roadmap can can take more than 5 min, depending on which months you first start the flow. 
+Note: The process of inserting all items from the official Roadmap can take more than 5 min, depending on which months you first start the flow. 
 
 Column | Description | 
 --- | --- | 
