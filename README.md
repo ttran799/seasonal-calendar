@@ -44,12 +44,11 @@ Important:
 - For the column "Summary" the option "Enhanced Rich Text" has to be activated manually. Go to the SharePoint list > Summary > Column Settings > Edit > More Options > "Use enhanced rich...": Yes > Save
 - For the column "PublishDate" and "UpdatedDate" the times, as well as the friendly format must NOT be included. PublishDate & UpdatedDate > Include Time = No > Friendly format = No > Save
 
-3. Import of the "RoadmapRSSFlow" flow. The "Guide_ImportFlow" guide can be used again for this. You can activate the flow after importing it, the list should be filled with all entries of this year, because you running the Flow for the first time. After that and for the best performance you should edit the flow to always run on the 1st of a month, to set this up: Edit the Flow > Click on the Action "Recurrence" > Show advanced options > Start time: 2022-XX-01T00:00:00 > Save (XX should be the next upcoming month e.g. If today is 18th June 2022, Start time should be 2022-07-01T00:00:00. This flow repeats itself every month to add all entries of the previous month to the list.
+3. Import of the "RoadmapRSSFlow" flow. The "Guide_ImportFlow" guide can be used again for this. When importing, the connector for RSS must be created, use the same steps as for the SharePoint connector. Now you need to change the necessary actions. You need to make sure to select the correct SharePoint page in the flow. A total of 2 changes must be made. One for the action "Retrieve items" and one for the action "Create item. The second action is included in the action "Loop through RSS feed" > "Check if...". For both changes it is important to select the correct list!
 
-Important: 
-- When importing, the connector for RSS must be created, use the same steps as for the SharePoint connector.
-- After the import, make sure to select the correct SharePoint page in the flow. A total of 2 changes must be made. One for the action "Retrieve items" and one for the action "Create item. This item is included in the action "Loop through RSS feed" > "Check if...". For both changes it is important to select the correct list!
-- During import it can happen that GA Date and PublishDate are not in the correct column. Therefore set PublishDate with the RSS "Feed published on" and GA Date with the variable vGADate.
+4. Now you can execute the Flow manually, the SharePoint List should be filled with all entries of this year, because you running the Flow for the first time. After that and for the best performance you should edit the flow to always run on the 1st of a month, to set this up: Edit the Flow > Click on the Action "Recurrence" > Show advanced options > Start time: 2022-XX-01T00:00:00 > Save (XX should be the next upcoming month e.g. If today is 18th June 2022, Start time should be 2022-07-01T00:00:00. This flow repeats itself every month to add all entries of the previous month to the list.
+
+Note: The process of inserting all items from the official Roadmap can can take more than 5 min, depending on which months you first start the flow. 
 
 Column | Description | 
 --- | --- | 
