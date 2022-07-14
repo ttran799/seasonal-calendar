@@ -3,6 +3,8 @@
 The Seasonal Calendar Power App is designed to deliver the latest updates of Microsoft products in a visually appealing way for end users. The app uses a playful user interface for this, by always releasing the updates on a monthly basis. It is up to the Admin to decide which articles and products should be displayed in the app, as the data is entered into a SharePoint list. 
 
 ![MainImage](https://user-images.githubusercontent.com/106154410/178455421-49438bf4-7f08-4fba-b5eb-9453001a746f.png)
+![image](https://user-images.githubusercontent.com/106154410/178925364-5bcb8653-4561-4bae-b075-cfaa98edb250.png)
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
